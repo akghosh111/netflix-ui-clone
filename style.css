@@ -143,18 +143,26 @@ nav button {
     align-items: center;
 }
 
+@media screen and (max-width:1300px) {
+    .first {
+        flex-wrap: wrap;
+
+    }
+
+}
+
 
 .secImg {
     position: relative;
-    
+
 }
 
-.secImg img{
+.secImg img {
     width: 555px;
     position: relative;
     z-index: 10;
 
-    
+
 }
 
 
@@ -168,17 +176,17 @@ nav button {
 
 
 
-section.first > div :nth-child(1){
+section.first>div :nth-child(1) {
     font-size: 48px;
     font-weight: bold;
-    
+
 }
 
 
-section.first > div :nth-child(2){
+section.first>div :nth-child(2) {
     font-size: 24px;
     font-weight: bold;
-    
+
 }
 
 .faq {
@@ -187,7 +195,7 @@ section.first > div :nth-child(2){
     padding: 34px;
 }
 
-.faq h2{
+.faq h2 {
     text-align: center;
     font-size: 48px;
     font-weight: 600;
@@ -216,7 +224,10 @@ footer {
     padding: 14px;
 }
 
-footer .questions{
+
+
+
+footer .questions {
     padding: 34px 0;
 }
 
@@ -225,6 +236,74 @@ footer .questions{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: white;
 }
+
+@media screen and (max-width: 1300px) {
+
+    nav {
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item {
+        align-items: center;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
 
 .footer a {
     font-size: 14px;
